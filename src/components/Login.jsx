@@ -34,7 +34,8 @@ const Login = ({ onBack }) => {
       setIsFadingOut(true);
       // 페이드아웃 완료 후 페이지 이동
       setTimeout(() => {
-        window.location.href = "/solar-explorer/index.html";
+        const base = process.env.PUBLIC_URL || '';
+        window.location.href = `${base}/solar-explorer/`;
       }, 800);
     }, 1000);
   };
