@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/figadev/static/css/main.1b211ce6.css",
-    "main.js": "/figadev/static/js/main.adfb319f.js",
+    "main.js": "/figadev/static/js/main.3b913f46.js",
     "static/media/GowunBatang-Regular.ttf": "/figadev/static/media/GowunBatang-Regular.6b610213de9843984042.ttf",
     "static/media/SF-Pro-Text-Heavy.otf": "/figadev/static/media/SF-Pro-Text-Heavy.6bf7ad8c9cc08360e95e.otf",
     "static/media/SF-Pro-Text-Bold.otf": "/figadev/static/media/SF-Pro-Text-Bold.8641a6404c58506495eb.otf",
@@ -11,10 +11,10 @@
     "static/media/Cardinal Fruit Medium.ttf": "/figadev/static/media/Cardinal Fruit Medium.56e2868492abe366a574.ttf",
     "index.html": "/figadev/index.html",
     "main.1b211ce6.css.map": "/figadev/static/css/main.1b211ce6.css.map",
-    "main.adfb319f.js.map": "/figadev/static/js/main.adfb319f.js.map"
+    "main.3b913f46.js.map": "/figadev/static/js/main.3b913f46.js.map"
   },
   "entrypoints": [
     "static/css/main.1b211ce6.css",
-    "static/js/main.adfb319f.js"
+    "static/js/main.3b913f46.js"
   ]
 }
