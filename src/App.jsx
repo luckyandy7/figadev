@@ -15,28 +15,31 @@ import ClickSpark from "./components/ClickSpark";
 import SpaceTravel from "./components/SpaceTravel";
 import SolarExplorer from "./components/SolarExplorer";
 
+// Helper to prefix assets for GitHub Pages subpath
+const asset = (p) => `${process.env.PUBLIC_URL}${p}`;
+
 // Gallery images - kept for potential future use
 
 // Image assets - matched by name and purpose
-const imgIcon1 = "/icon.png"; // Project logo/icon
-const imgMichaelDanielsYHh07IgjajmUnsplash1 = "/section2.png"; // Main hero/about section background
-const imgVector = "/section5.png"; // Section 5 brand image
+const imgIcon1 = asset("/icon.png"); // Project logo/icon
+const imgMichaelDanielsYHh07IgjajmUnsplash1 = asset("/section2.png"); // Main hero/about section background
+const imgVector = asset("/section5.png"); // Section 5 brand image
 
 // Hardware/Product images
-const imgImage22 = "/muse.png"; // Muse S Athena
-const imgImage23 = "/aiobjet.png"; // AI Object main
-const imgImage24 = "/multiplatform.png"; // Multiplatform
+const imgImage22 = asset("/muse.png"); // Muse S Athena
+const imgImage23 = asset("/aiobjet.png"); // AI Object main
+const imgImage24 = asset("/multiplatform.png"); // Multiplatform
 
 // Process step images
-const imgTSbhXcBw10HvxPaJ6SsTtRiiplkPng = "/10 1.png"; // Step 1 illustration
-const imgMX5DAhTlaceN4NDguCeAZcFbIPng = "/10 2.png"; // Space travel illustration
-const img7VSjm6K3MAQqqM3HtSKme77ZhCsPng = "/10 3.png"; // Dashboard/past analysis illustration
+const imgTSbhXcBw10HvxPaJ6SsTtRiiplkPng = asset("/10 1.png"); // Step 1 illustration
+const imgMX5DAhTlaceN4NDguCeAZcFbIPng = asset("/10 2.png"); // Space travel illustration
+const img7VSjm6K3MAQqqM3HtSKme77ZhCsPng = asset("/10 3.png"); // Dashboard/past analysis illustration
 
 // Background images for sections
-const img5Rl6Euo2A82GoM2LuomsVwa2LtgPng = "/section 9 1.png"; // Web platform background
-const imgUNfqhpKdcciDtsQpSwaR0GNx46IJpg = "/section 9 2.png"; // Section 9 Media Gallery background
-const imgImageBhlGrMWa8BjbLVs1247F4KgYyaJpg = "/last.png"; // CTA section background
-const img0XbktCoQ1FitPsBfXIm6XgBs0SkJpg = "/section 9 2.png"; // Section 9 part 2
+const img5Rl6Euo2A82GoM2LuomsVwa2LtgPng = asset("/section 9 1.png"); // Web platform background
+const imgUNfqhpKdcciDtsQpSwaR0GNx46IJpg = asset("/section 9 2.png"); // Section 9 Media Gallery background
+const imgImageBhlGrMWa8BjbLVs1247F4KgYyaJpg = asset("/last.png"); // CTA section background
+const img0XbktCoQ1FitPsBfXIm6XgBs0SkJpg = asset("/section 9 2.png"); // Section 9 part 2
 
 // Section 1 - Hero
 const HeroSection = ({ onLoginClick }) => {
@@ -459,15 +462,15 @@ const BrandSection = () => {
 // Section 6 - Gallery
 const GallerySection = () => {
   const galleryItems = [
-    { image: "/197937fa-fb9c-46ec-9501-78795206aa58_650.jpg", text: "" },
-    { image: "/20f5711b-b61e-411c-acf0-99c0921ec9a9_650.jpg", text: "" },
-    { image: "/6f620988-4c69-41a0-a9e2-7a1dca7cebb1_650.jpg", text: "" },
-    { image: "/75b087fd-df9b-47b1-827e-7cb36d5703ec_650.jpg", text: "" },
-    { image: "/7634883_YiY5IqT601.jpg", text: "" },
-    { image: "/c3eaa544-8727-4891-8580-272968b749b8_650.jpg", text: "" },
-    { image: "/ca2c99f3-e49c-47ee-8791-8f3e21775fdc_650.jpg", text: "" },
-    { image: "/dff013db-1785-4cd2-8347-3cd7da910618_650.jpg", text: "" },
-    { image: "/f841a441-4988-4fbc-bd4d-0cdf601a67cb_650.jpg", text: "" },
+    { image: asset("/197937fa-fb9c-46ec-9501-78795206aa58_650.jpg"), text: "" },
+    { image: asset("/20f5711b-b61e-411c-acf0-99c0921ec9a9_650.jpg"), text: "" },
+    { image: asset("/6f620988-4c69-41a0-a9e2-7a1dca7cebb1_650.jpg"), text: "" },
+    { image: asset("/75b087fd-df9b-47b1-827e-7cb36d5703ec_650.jpg"), text: "" },
+    { image: asset("/7634883_YiY5IqT601.jpg"), text: "" },
+    { image: asset("/c3eaa544-8727-4891-8580-272968b749b8_650.jpg"), text: "" },
+    { image: asset("/ca2c99f3-e49c-47ee-8791-8f3e21775fdc_650.jpg"), text: "" },
+    { image: asset("/dff013db-1785-4cd2-8347-3cd7da910618_650.jpg"), text: "" },
+    { image: asset("/f841a441-4988-4fbc-bd4d-0cdf601a67cb_650.jpg"), text: "" },
   ];
 
   return (

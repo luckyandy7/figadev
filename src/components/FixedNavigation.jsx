@@ -93,7 +93,7 @@ const FixedNavigation = () => {
             <img
               alt="NOOS Logo"
               className="block max-w-none h-full w-full object-contain"
-              src="/icon.png"
+              src={`${process.env.PUBLIC_URL}/icon.png`}
             />
           </div>
           <span className="font-cardinal-fruit text-sm text-white">

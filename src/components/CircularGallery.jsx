@@ -375,44 +375,44 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: "/197937fa-fb9c-46ec-9501-78795206aa58_650.jpg",
+        image: `${process.env.PUBLIC_URL}/197937fa-fb9c-46ec-9501-78795206aa58_650.jpg`,
         text: ''
       },
       {
-        image: "/20f5711b-b61e-411c-acf0-99c0921ec9a9_650.jpg",
+        image: `${process.env.PUBLIC_URL}/20f5711b-b61e-411c-acf0-99c0921ec9a9_650.jpg`,
         text: ''
       },
       {
-        image: "/6f620988-4c69-41a0-a9e2-7a1dca7cebb1_650.jpg",
+        image: `${process.env.PUBLIC_URL}/6f620988-4c69-41a0-a9e2-7a1dca7cebb1_650.jpg`,
         text: ''
       },
       {
-        image: "/75b087fd-df9b-47b1-827e-7cb36d5703ec_650.jpg",
+        image: `${process.env.PUBLIC_URL}/75b087fd-df9b-47b1-827e-7cb36d5703ec_650.jpg`,
         text: ''
       },
       {
-        image: "/7634883_YiY5IqT601.jpg",
+        image: `${process.env.PUBLIC_URL}/7634883_YiY5IqT601.jpg`,
         text: ''
       },
       {
-        image: "/c3eaa544-8727-4891-8580-272968b749b8_650.jpg",
+        image: `${process.env.PUBLIC_URL}/c3eaa544-8727-4891-8580-272968b749b8_650.jpg`,
         text: ''
       },
       {
-        image: "/ca2c99f3-e49c-47ee-8791-8f3e21775fdc_650.jpg",
+        image: `${process.env.PUBLIC_URL}/ca2c99f3-e49c-47ee-8791-8f3e21775fdc_650.jpg`,
         text: ''
       },
       {
-        image: "/dff013db-1785-4cd2-8347-3cd7da910618_650.jpg",
+        image: `${process.env.PUBLIC_URL}/dff013db-1785-4cd2-8347-3cd7da910618_650.jpg`,
         text: ''
       },
       {
-        image: "/f841a441-4988-4fbc-bd4d-0cdf601a67cb_650.jpg",
+        image: `${process.env.PUBLIC_URL}/f841a441-4988-4fbc-bd4d-0cdf601a67cb_650.jpg`,
         text: ''
       }
     ];
-    // Force use local images
-    const galleryItems = defaultItems;
+    // Use provided items if available, otherwise fall back to defaults
+    const galleryItems = (items && items.length ? items : defaultItems);
     this.mediasImages = galleryItems.concat(galleryItems);
     this.medias = this.mediasImages.map((data, index) => {
       return new Media({

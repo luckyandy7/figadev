@@ -21,7 +21,7 @@ const AboutUs = () => {
   // 팀원 데이터 (ChromaGrid 형식)
   const teamMembers = [
     {
-      image: "/suhwan.jpg",
+      image: `${process.env.PUBLIC_URL}/suhwan.jpg`,
       title: "전수환",
       subtitle: "Teamleader, AI Engineer, FrontEND",
       handle: "@suhw__an",
@@ -30,7 +30,7 @@ const AboutUs = () => {
       url: "https://github.com/",
     },
     {
-      image: "/김성은.JPG",
+      image: `${process.env.PUBLIC_URL}/김성은.JPG`,
       title: "김성은",
       subtitle: "App developer(IOS,Android)",
       handle: "@s_ungeun318",
@@ -39,7 +39,7 @@ const AboutUs = () => {
       url: "https://github.com/",
     },
     {
-      image: "/권순하.JPG",
+      image: `${process.env.PUBLIC_URL}/권순하.JPG`,
       title: "권순하",
       subtitle: "BackEND Developer, Dataset",
       handle: "@sunha",
@@ -48,7 +48,7 @@ const AboutUs = () => {
       url: "https://github.com/",
     },
     {
-      image: "/박지호.JPG",
+      image: `${process.env.PUBLIC_URL}/박지호.JPG`,
       title: "박지호",
       subtitle: "BackEND Developer, Dataset",
       handle: "@mmoo_0301",
