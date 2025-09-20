@@ -6,9 +6,7 @@ import App from "./App.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import FixedNavigation from "./components/FixedNavigation.jsx";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>

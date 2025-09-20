@@ -12,6 +12,7 @@ module.exports = {
         'freesentation-bold': ['Freesentation Bold', 'Freesentation', 'Roboto', 'Arial', 'Helvetica', 'sans-serif'],
         'sf-pro': ['SF Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Inter', 'Roboto', 'sans-serif'],
         'sf-pro-bold': ['SF Pro Bold', 'SF Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Inter', 'Roboto', 'sans-serif'],
+        'sf-pro-heavy': ['SF Pro Heavy', 'SF Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Inter', 'Roboto', 'sans-serif'],
         'sf-pro-display': ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Inter', 'Roboto', 'sans-serif'],
         'inter': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
         'inter-display': ['Inter Display', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
@@ -81,7 +82,17 @@ module.exports = {
       },
       maskImage: {
         'gradient': 'linear-gradient(black, transparent)',
-      }
+      },
+      keyframes: {
+        gradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
+      animation: {
+        gradient: 'gradient 8s linear infinite'
+      },
     },
   },
   plugins: [],
