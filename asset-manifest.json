@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/figadev/static/css/main.1b211ce6.css",
+    "main.js": "/figadev/static/js/main.cecf4854.js",
+    "static/media/GowunBatang-Regular.ttf": "/figadev/static/media/GowunBatang-Regular.6b610213de9843984042.ttf",
+    "static/media/SF-Pro-Text-Heavy.otf": "/figadev/static/media/SF-Pro-Text-Heavy.6bf7ad8c9cc08360e95e.otf",
+    "static/media/SF-Pro-Text-Bold.otf": "/figadev/static/media/SF-Pro-Text-Bold.8641a6404c58506495eb.otf",
+    "static/media/Freesentation-5Medium.ttf": "/figadev/static/media/Freesentation-5Medium.b6fcec1168fca884c8e0.ttf",
+    "static/media/Freesentation-7Bold.ttf": "/figadev/static/media/Freesentation-7Bold.75b9c63c48749eccf6ee.ttf",
+    "static/media/Freesentation-9Black.ttf": "/figadev/static/media/Freesentation-9Black.c9046e4a2972661ec6e3.ttf",
+    "static/media/Cardinal Fruit Medium.ttf": "/figadev/static/media/Cardinal Fruit Medium.56e2868492abe366a574.ttf",
+    "index.html": "/figadev/index.html",
+    "main.1b211ce6.css.map": "/figadev/static/css/main.1b211ce6.css.map",
+    "main.cecf4854.js.map": "/figadev/static/js/main.cecf4854.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b211ce6.css",
+    "static/js/main.cecf4854.js"
+  ]
+}
