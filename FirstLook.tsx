@@ -157,7 +157,9 @@ const FirstLook: React.FC = () => {
           </motion.span>
         </motion.h1>
 
-        <GlowButton onClick={handleJump}>🚀 JUMP</GlowButton>
+        <GlowButton onClick={handleJump}>
+          🚀 JUMP
+        </GlowButton>
       </motion.div>
 
       <motion.div
