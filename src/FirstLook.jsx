@@ -145,10 +145,12 @@ const FirstLook = ({ onJump }) => {
           transition={{
             duration: 0.8,
             delay: 2.2,
-            ease: "easeOut",
+            ease: "easeOut"
           }}
         >
-          <GlowButton onClick={handleJump}>🚀 JUMP</GlowButton>
+          <GlowButton onClick={handleJump}>
+            🚀 JUMP
+          </GlowButton>
         </motion.div>
       </motion.div>
 

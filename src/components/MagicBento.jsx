@@ -7,6 +7,7 @@ const DEFAULT_GLOW_COLOR = '132, 0, 255';
 const MOBILE_BREAKPOINT = 768;
 
 const base = process.env.PUBLIC_URL || '';
+const asset = (name) => `${base}/${encodeURIComponent(name)}`;
 
 const cardData = [
   {
@@ -14,42 +15,42 @@ const cardData = [
     title: 'AI Objet',
     description: 'LED의 섬세한 빛의 움직임과 빛의 색 제공, 최적화된 사운드 제공',
     label: 'Smart Environment',
-    image: `${base}/aiobjet.png`
+    image: asset('aiobjet.png')
   },
   {
     color: '#060010',
     title: 'Unified Life-log Dashboard',
     description: '하루 동안의 집중·감정 변화 타임라인 제공 자기 성찰과 패턴 분석 지원',
     label: 'Analytics',
-    image: `${base}/dashboard.png`
+    image: asset('dashboard.png')
   },
   {
     color: '#060010',
     title: 'Real-time Multimodal Generation',
     description: '조명, 소리, 추상 아트워크, 오브제 움직임을 동적으로 생성',
     label: 'Generation',
-    image: `${base}/mutimodel.png`
+    image: asset('mutimodel.png')
   },
   {
     color: '#060010',
     title: 'Personalized Reinforcement Learning',
     description: '사용자의 피드백 반영, 점점 더 맞춤형 환경 제공',
     label: 'Learning',
-    image: `${base}/feedback.png`
+    image: asset('feedback.png')
   },
   {
     color: '#060010',
     title: 'Cognitive-Emotional State Fusion AI',
     description: '인지+감성 데이터를 실시간으로 융합하여 복잡적 내면 상태 추론',
     label: 'AI Fusion',
-    image: `${base}/cognitive fusion ai.png`
+    image: asset('cognitive fusion ai.png')
   },
   {
     color: '#060010',
     title: 'Multi-sensory Cognitive & Emotional Sensing',
     description: '뇌파(EEG) → 사용자의 인지,감정 상태 감지',
     label: 'Sensing',
-    image: `${base}/multi sensory.png`
+    image: asset('multi sensory.png')
   }
 ];
 

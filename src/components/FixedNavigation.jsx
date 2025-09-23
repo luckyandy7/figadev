@@ -8,31 +8,15 @@ const FixedNavigation = () => {
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    const checkMainPage = () => {
-      // 메인 페이지인지 확인 (FirstLook에서 온 경우 또는 AboutUs에서 돌아온 경우 포함)
-      const isOnMainPage =
-        location.pathname === "/" &&
-        (searchParams.get("main") === "true" ||
-          window.location.search.includes("main=true") ||
-          // App 컴포넌트에서 설정한 전역 상태 확인
-          document.body.hasAttribute("data-main-page"));
+    // 메인 페이지인지 확인 (FirstLook에서 온 경우 또는 AboutUs에서 돌아온 경우 포함)
+    const isOnMainPage =
+      location.pathname === "/" &&
+      (searchParams.get("main") === "true" ||
+        window.location.search.includes("main=true") ||
+        // App 컴포넌트의 메인 콘텐츠가 렌더링되었는지 확인
+        document.querySelector(".App"));
 
-      setIsMainPage(isOnMainPage);
-    };
-
-    // 초기 확인
-    checkMainPage();
-
-    // MutationObserver로 data-main-page 속성 변화 감지
-    const observer = new MutationObserver(checkMainPage);
-    observer.observe(document.body, {
-      attributes: true,
-      attributeFilter: ["data-main-page"],
-    });
-
-    return () => {
-      observer.disconnect();
-    };
+    setIsMainPage(isOnMainPage);
   }, [location.pathname, searchParams]);
 
   useEffect(() => {
@@ -93,7 +77,7 @@ const FixedNavigation = () => {
             <img
               alt="NOOS Logo"
               className="block max-w-none h-full w-full object-contain"
-              src={`${process.env.PUBLIC_URL}/icon.png`}
+              src="/icon.png"
             />
           </div>
           <span className="font-cardinal-fruit text-sm text-white">

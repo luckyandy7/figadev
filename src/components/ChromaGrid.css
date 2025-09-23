@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "SF Pro";
-  src: url("../../font/SF-Pro-Text-Bold.otf") format("opentype");
+  font-family: 'SF Pro';
+  src: url('../../font/SF-Pro-Text-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
@@ -62,14 +62,10 @@
 }
 
 .chroma-card::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at var(--mouse-x) var(--mouse-y),
-    var(--spotlight-color),
-    transparent 70%
-  );
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -127,7 +123,7 @@
 }
 
 .chroma-info .name {
-  font-family: "SF Pro", system-ui, sans-serif;
+  font-family: 'SF Pro', system-ui, sans-serif;
   font-weight: bold;
   font-size: 1.1rem;
 }

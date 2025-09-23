@@ -9,7 +9,7 @@ import FixedNavigation from "./components/FixedNavigation.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : ''}>
       <FixedNavigation />
       <Routes>
         <Route path="/" element={<App />} />

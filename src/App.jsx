@@ -12,34 +12,29 @@ import Aurora from "./components/Aurora";
 import FirstLook from "./FirstLook";
 import Login from "./components/Login";
 import ClickSpark from "./components/ClickSpark";
-import SpaceTravel from "./components/SpaceTravel";
-import SolarExplorer from "./components/SolarExplorer";
-
-// Helper to prefix assets for GitHub Pages subpath
-const asset = (p) => `${process.env.PUBLIC_URL}${p}`;
 
 // Gallery images - kept for potential future use
 
 // Image assets - matched by name and purpose
-const imgIcon1 = asset("/icon.png"); // Project logo/icon
-const imgMichaelDanielsYHh07IgjajmUnsplash1 = asset("/section2.png"); // Main hero/about section background
-const imgVector = asset("/section5.png"); // Section 5 brand image
+const imgIcon1 = "/icon.png"; // Project logo/icon
+const imgMichaelDanielsYHh07IgjajmUnsplash1 = "/section2.png"; // Main hero/about section background
+const imgVector = "/section5.png"; // Section 5 brand image
 
 // Hardware/Product images
-const imgImage22 = asset("/muse.png"); // Muse S Athena
-const imgImage23 = asset("/aiobjet.png"); // AI Object main
-const imgImage24 = asset("/multiplatform.png"); // Multiplatform
+const imgImage22 = "/muse.png"; // Muse S Athena
+const imgImage23 = "/aiobjet.png"; // AI Object main
+const imgImage24 = "/multiplatform.png"; // Multiplatform
 
 // Process step images
-const imgTSbhXcBw10HvxPaJ6SsTtRiiplkPng = asset("/10 1.png"); // Step 1 illustration
-const imgMX5DAhTlaceN4NDguCeAZcFbIPng = asset("/10 2.png"); // Space travel illustration
-const img7VSjm6K3MAQqqM3HtSKme77ZhCsPng = asset("/10 3.png"); // Dashboard/past analysis illustration
+const imgTSbhXcBw10HvxPaJ6SsTtRiiplkPng = "/10 1.png"; // Step 1 illustration
+const imgMX5DAhTlaceN4NDguCeAZcFbIPng = "/10 2.png"; // Space travel illustration
+const img7VSjm6K3MAQqqM3HtSKme77ZhCsPng = "/10 3.png"; // Dashboard/past analysis illustration
 
 // Background images for sections
-const img5Rl6Euo2A82GoM2LuomsVwa2LtgPng = asset("/section 9 1.png"); // Web platform background
-const imgUNfqhpKdcciDtsQpSwaR0GNx46IJpg = asset("/section 9 2.png"); // Section 9 Media Gallery background
-const imgImageBhlGrMWa8BjbLVs1247F4KgYyaJpg = asset("/last.png"); // CTA section background
-const img0XbktCoQ1FitPsBfXIm6XgBs0SkJpg = asset("/section 9 2.png"); // Section 9 part 2
+const img5Rl6Euo2A82GoM2LuomsVwa2LtgPng = "/section 9 1.png"; // Web platform background
+const imgUNfqhpKdcciDtsQpSwaR0GNx46IJpg = "/section 9 2.png"; // Section 9 Media Gallery background
+const imgImageBhlGrMWa8BjbLVs1247F4KgYyaJpg = "/last.png"; // CTA section background
+const img0XbktCoQ1FitPsBfXIm6XgBs0SkJpg = "/section 9 2.png"; // Section 9 part 2
 
 // Section 1 - Hero
 const HeroSection = ({ onLoginClick }) => {
@@ -82,7 +77,7 @@ const HeroSection = ({ onLoginClick }) => {
           </motion.div>
 
           <motion.div
-            className="flex items-center gap-8"
+            className="hidden md:flex items-center gap-8"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -173,7 +168,7 @@ const HeroSection = ({ onLoginClick }) => {
             whileTap={{ scale: 0.98 }}
           >
             <div className="font-cardinal-fruit text-[18px] md:text-[20px] text-[rgba(255,255,255,0.8)] tracking-[-0.42px]">
-              Use on the web
+              Available on Web
             </div>
           </motion.div>
         </motion.div>
@@ -462,15 +457,15 @@ const BrandSection = () => {
 // Section 6 - Gallery
 const GallerySection = () => {
   const galleryItems = [
-    { image: asset("/197937fa-fb9c-46ec-9501-78795206aa58_650.jpg"), text: "" },
-    { image: asset("/20f5711b-b61e-411c-acf0-99c0921ec9a9_650.jpg"), text: "" },
-    { image: asset("/6f620988-4c69-41a0-a9e2-7a1dca7cebb1_650.jpg"), text: "" },
-    { image: asset("/75b087fd-df9b-47b1-827e-7cb36d5703ec_650.jpg"), text: "" },
-    { image: asset("/7634883_YiY5IqT601.jpg"), text: "" },
-    { image: asset("/c3eaa544-8727-4891-8580-272968b749b8_650.jpg"), text: "" },
-    { image: asset("/ca2c99f3-e49c-47ee-8791-8f3e21775fdc_650.jpg"), text: "" },
-    { image: asset("/dff013db-1785-4cd2-8347-3cd7da910618_650.jpg"), text: "" },
-    { image: asset("/f841a441-4988-4fbc-bd4d-0cdf601a67cb_650.jpg"), text: "" },
+    { image: "/197937fa-fb9c-46ec-9501-78795206aa58_650.jpg", text: "" },
+    { image: "/20f5711b-b61e-411c-acf0-99c0921ec9a9_650.jpg", text: "" },
+    { image: "/6f620988-4c69-41a0-a9e2-7a1dca7cebb1_650.jpg", text: "" },
+    { image: "/75b087fd-df9b-47b1-827e-7cb36d5703ec_650.jpg", text: "" },
+    { image: "/7634883_YiY5IqT601.jpg", text: "" },
+    { image: "/c3eaa544-8727-4891-8580-272968b749b8_650.jpg", text: "" },
+    { image: "/ca2c99f3-e49c-47ee-8791-8f3e21775fdc_650.jpg", text: "" },
+    { image: "/dff013db-1785-4cd2-8347-3cd7da910618_650.jpg", text: "" },
+    { image: "/f841a441-4988-4fbc-bd4d-0cdf601a67cb_650.jpg", text: "" },
   ];
 
   return (
@@ -721,7 +716,7 @@ const HardwareSection = () => {
   return (
     <section className="bg-black relative py-20">
       <div className="box-border content-stretch flex flex-col items-center justify-end pb-[60px] pt-[30px] px-[30px] relative size-full">
-        <div className="box-border content-stretch flex flex-col gap-[28px] items-center justify-start max-w-[1280px] px-[72px] py-0 relative shrink-0 w-full">
+        <div className="box-border content-stretch flex flex-col gap-[28px] items-center justify-start max-w-[1280px] px-[72px] py-0 relative shrink-0 w-[1280px]">
           <div className="bg-[rgba(0,140,255,0.1)] box-border content-stretch flex items-center justify-center pb-[12px] pt-[11px] px-[20px] relative rounded-[100px] shrink-0">
             <div className="content-stretch flex flex-col items-start justify-start relative shrink-0">
               <div className="content-stretch flex flex-col items-start justify-start relative shrink-0 w-full">
@@ -803,7 +798,7 @@ const MediaGallerySection = () => {
 
   return (
     <section className="bg-black relative py-20 min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="w-full flex items-center justify-center px-4">
+      <div className="w-full flex items-center justify-center">
         <div
           className="flex gap-4 cursor-grab active:cursor-grabbing transition-transform duration-200 ease-out"
           style={{
@@ -813,7 +808,7 @@ const MediaGallerySection = () => {
           onMouseDown={handleMouseDown}
         >
           {/* Left Card - Web */}
-          <div className="relative w-full max-w-[720px] h-[480px] overflow-hidden rounded-[28px] shadow-2xl flex-shrink-0">
+          <div className="relative w-[720px] h-[480px] overflow-hidden rounded-[28px] shadow-2xl flex-shrink-0">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -831,7 +826,7 @@ const MediaGallerySection = () => {
           </div>
 
           {/* Right Card - Desktop */}
-          <div className="relative w-full max-w-[720px] h-[480px] bg-[#f6f0fe] overflow-hidden rounded-[28px] shadow-2xl flex-shrink-0">
+          <div className="relative w-[720px] h-[480px] bg-[#f6f0fe] overflow-hidden rounded-[28px] shadow-2xl flex-shrink-0">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -1247,13 +1242,13 @@ const CtaSection = () => {
       <div className="bg-black content-stretch flex flex-col items-center justify-center relative size-full">
         <div className="absolute content-stretch flex inset-0 items-center justify-center">
           <div
-            className="bg-left bg-no-repeat bg-cover h-full opacity-70 shrink-0 w-full"
+            className="bg-left bg-no-repeat bg-size-[100%_220.64%] h-full opacity-70 shrink-0 w-[1920px]"
             style={{
               backgroundImage: `url('${imgImageBhlGrMWa8BjbLVs1247F4KgYyaJpg}')`,
             }}
           />
         </div>
-        <div className="h-[191.75px] max-w-[1440px] overflow-clip relative shrink-0 w-full">
+        <div className="h-[191.75px] max-w-[1440px] overflow-clip relative shrink-0 w-[1440px]">
           <a
             className="absolute bg-black box-border content-stretch cursor-pointer flex items-center justify-center left-[30px] overflow-clip pb-[10px] pt-[9px] px-[24px] top-[152.56px]"
             href="https://vence.framer.website/contact"
@@ -1344,7 +1339,7 @@ const SmoothTransition = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      style={{ pointerEvents: "none" }}
+      style={{ pointerEvents: 'none' }}
     />
   );
 };
@@ -1355,43 +1350,14 @@ function App() {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [isLoginTransitioning, setIsLoginTransitioning] = useState(false);
-  const [showSpaceTravel, setShowSpaceTravel] = useState(false);
-  const [selectedPlanet, setSelectedPlanet] = useState(null);
-  const [showSolarExplorer, setShowSolarExplorer] = useState(false);
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
     // URL에 main=true 파라미터가 있으면 메인 페이지로 바로 이동
-    if (searchParams.get("main") === "true") {
+    if (searchParams.get('main') === 'true') {
       setShowFirstLook(false);
     }
-
-    // URL에 spaceTravel=true와 planet 파라미터가 있으면 스페이스 여행 시작
-    if (searchParams.get("spaceTravel") === "true") {
-      const planet = searchParams.get("planet");
-      if (planet) {
-        setSelectedPlanet(planet);
-        setShowSpaceTravel(true);
-        setShowFirstLook(false);
-        setShowLogin(false);
-      }
-    }
   }, [searchParams]);
-
-  // 메인 페이지 표시 상태를 전역에 알리기
-  useEffect(() => {
-    if (
-      !showFirstLook &&
-      !showLogin &&
-      !showSpaceTravel &&
-      !showSolarExplorer
-    ) {
-      // 메인 페이지가 활성화된 상태임을 표시
-      document.body.setAttribute("data-main-page", "true");
-    } else {
-      document.body.removeAttribute("data-main-page");
-    }
-  }, [showFirstLook, showLogin, showSpaceTravel, showSolarExplorer]);
 
   const handleJumpToMain = () => {
     setIsTransitioning(true);
@@ -1423,77 +1389,10 @@ function App() {
     }, 500); // 0.5초 후 전환 완료
   };
 
-  const handleBackFromSpaceTravel = () => {
-    // 스페이스 여행에서 Solar Explorer로 돌아가기
-    setShowSpaceTravel(false);
-    setSelectedPlanet(null);
-    setShowSolarExplorer(true);
-  };
-
-  const handleSolarExplorerOpen = () => {
-    // 메인 페이지에서 Solar Explorer로 이동
-    setShowSolarExplorer(true);
-    setShowFirstLook(false);
-    setShowLogin(false);
-  };
-
-  const handlePlanetSelect = (planet) => {
-    // Solar Explorer에서 행성 선택 시 우주 여행 시작
-    console.log("Planet selected:", planet);
-    setSelectedPlanet(planet);
-    setShowSpaceTravel(true);
-    setShowSolarExplorer(false);
-  };
-
-  if (showSpaceTravel && selectedPlanet) {
-    return (
-      <ClickSpark
-        sparkColor="#fff"
-        sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
-        duration={400}
-      >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.95 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
-          <SpaceTravel
-            planet={selectedPlanet}
-            onBack={handleBackFromSpaceTravel}
-          />
-        </motion.div>
-      </ClickSpark>
-    );
-  }
-
-  if (showSolarExplorer) {
-    return (
-      <ClickSpark
-        sparkColor="#fff"
-        sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
-        duration={400}
-      >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.95 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
-          <SolarExplorer onPlanetSelect={handlePlanetSelect} />
-        </motion.div>
-      </ClickSpark>
-    );
-  }
-
   if (showLogin) {
     return (
       <ClickSpark
-        sparkColor="#fff"
+        sparkColor='#fff'
         sparkSize={10}
         sparkRadius={15}
         sparkCount={8}
@@ -1514,7 +1413,7 @@ function App() {
   if (showFirstLook) {
     return (
       <ClickSpark
-        sparkColor="#fff"
+        sparkColor='#fff'
         sparkSize={10}
         sparkRadius={15}
         sparkCount={8}
@@ -1528,7 +1427,7 @@ function App() {
 
   return (
     <ClickSpark
-      sparkColor="#fff"
+      sparkColor='#fff'
       sparkSize={10}
       sparkRadius={15}
       sparkCount={8}
@@ -1564,79 +1463,79 @@ function App() {
           </motion.div>
         )}
 
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <HeroSection onLoginClick={handleLoginClick} />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <AboutSection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <ProblemSection1 />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <ProblemSection2 />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <BrandSection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <GallerySection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <FeaturesSection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <HardwareSection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <MediaGallerySection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <HowItWorksSection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <PricingSection />
-        </div>
-        <div
-          className="snap-start min-h-screen"
-          style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-        >
-          <CtaSection />
-        </div>
-      </motion.div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <HeroSection onLoginClick={handleLoginClick} />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <AboutSection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <ProblemSection1 />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <ProblemSection2 />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <BrandSection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <GallerySection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <FeaturesSection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <HardwareSection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <MediaGallerySection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <HowItWorksSection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <PricingSection />
+      </div>
+      <div
+        className="snap-start min-h-screen"
+        style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+      >
+        <CtaSection />
+      </div>
+    </motion.div>
     </ClickSpark>
   );
 }
